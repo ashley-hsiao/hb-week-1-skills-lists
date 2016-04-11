@@ -107,13 +107,16 @@ def long_words(word_list):
 
     max_characters = 4
 
-    four_word_list = []
+    # four_word_list = []
 
-    for word in word_list:
-        if len(word) > max_characters:
-            four_word_list.append(word)
+    # for word in word_list:
+    #     if len(word) > max_characters:
+    #         four_word_list.append(word)
 
-    return four_word_list
+    # return four_word_list
+
+    # List comprehension provided below for the full for loop written above
+    return [word for word in word_list if len(word) > max_characters]
 
 
 def n_long_words(word_list, n):
@@ -127,13 +130,16 @@ def n_long_words(word_list, n):
 
     """
 
-    n_word_list = []
+    # n_word_list = []
 
-    for word in word_list:
-        if len(word) > n:
-            n_word_list.append(word)
+    # for word in word_list:
+    #     if len(word) > n:
+    #         n_word_list.append(word)
 
-    return n_word_list
+    # return n_word_list
+
+    # List comprehension provided below for the full for loop written above
+    return [word for word in word_list if len(word) > n]
 
 
 def smallest_int(number_list):
@@ -214,13 +220,15 @@ def halvesies(number_list):
 
     """
 
-    halvesies_list = []
+    # halvesies_list = []
 
-    for num in number_list:
-        num = float(num) / 2
-        halvesies_list.append(num)
+    # for num in number_list:
+    #     num = float(num) / 2
+    #     halvesies_list.append(num)
 
-    return halvesies_list
+    # return halvesies_list
+
+    return [(float(num)/2) for num in number_list]
 
 
 def word_lengths(word_list):
@@ -451,6 +459,8 @@ def find_letter_indices(list_of_words, letter):
     [0, 1, 2, None]
 
     """
+
+    # Found this question very challenging
 
     letter_indices = []
 
