@@ -91,7 +91,7 @@ def print_indexes(my_list):
     """
 
     for index, word in enumerate(my_list):
-        return index, word
+        print index, word
 
 
 def long_words(word_list):
