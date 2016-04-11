@@ -285,15 +285,16 @@ def mult_numbers(number_list):
 
     """
 
-    if not number_list:
-        return 1
+    # No need for this line of code, as by setting product = 1, the returned value will still be 1 for empty list
+    # if not number_list:
+    #     return 1
 
-    mult_list = 1
+    product = 1
 
     for num in number_list:
-        mult_list *= num
+        product *= num
 
-    return mult_list
+    return product
 
 
 def join_strings(word_list):
