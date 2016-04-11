@@ -401,7 +401,13 @@ def reverse_list_in_place(my_list):
 
     """
 
-    return my_list[::-1]
+    index = -1
+
+    for item in my_list[:]:
+        my_list[index] = item
+        index -= 1
+
+    return my_list
 
 
 def duplicates(my_list):
