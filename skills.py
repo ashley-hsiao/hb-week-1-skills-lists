@@ -472,10 +472,10 @@ def find_letter_indices(list_of_words, letter):
 
 
 def largest_n_items(input_list, n):
-    """Given a list of integers along with an integer n, return a 
-    list of the largest n numbers in the input list in ascending order. 
+    """Given a list of integers along with an integer n, return a
+    list of the largest n numbers in the input list in ascending order.
 
-    You can assume that n will be less than the length of the list. 
+    You can assume that n will be less than the length of the list.
 
     For example:
 
@@ -484,7 +484,11 @@ def largest_n_items(input_list, n):
 
     """
 
-    return []
+    # This sorts the list in descending order
+    input_list.sort(reverse=True)
+
+    # This slices the list from start up until n, then sorts it in ascending order
+    return sorted(input_list[:n])
 
 
 ##############################################################################
