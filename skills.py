@@ -258,12 +258,12 @@ def sum_numbers(number_list):
 
     """
 
-    sum_list = 0
+    sum_of_numbers = 0
 
     for num in number_list:
-        sum_list += num
+        sum_of_numbers += num
 
-    return sum_list
+    return sum_of_numbers
 
 
 def mult_numbers(number_list):
