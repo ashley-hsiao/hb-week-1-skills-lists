@@ -423,7 +423,16 @@ def duplicates(my_list):
 
     """
 
-    return []
+    list_of_words = []
+    duplicate_words = []
+
+    for item in my_list:
+        if item not in list_of_words:
+            list_of_words.append(item)
+        else:
+            duplicate_words.append(item)
+
+    return list(set(duplicate_words))
 
 
 def find_letter_indices(list_of_words, letter):
