@@ -452,7 +452,24 @@ def find_letter_indices(list_of_words, letter):
 
     """
 
-    return []
+    letter_indices = []
+
+    for word in list_of_words:
+        index = 0
+        letter_found = False
+
+        while index < len(word):
+            if word[index] == letter:
+                letter_found = True
+                letter_indices.append(index)
+                break
+            index += 1
+
+        if letter_found is False:
+            letter_indices.append(None)
+
+    return letter_indices
+
 
 def largest_n_items(input_list, n):
     """Given a list of integers along with an integer n, return a 
